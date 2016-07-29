@@ -1,0 +1,48 @@
+
+<div class="container-fluid">
+
+    <div class="notecard col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+
+        <div class="background-image col-xs-11 col-sm-11 col-md-11"></div>
+
+        <!--<div class="front">-->
+
+
+
+        <div class="info">
+
+               <h1 class="companyName">{{name}}</h1>
+
+
+                <p id="trade">Trading at {{latestPrice}} - {{priceUnits}}</p>
+                <p id="ticker">Stock ticker code: {{ticker}}</p>
+                   </div>
+
+        <!--</div>-->
+
+        <div class="news">
+
+
+
+            <ul>
+
+
+                {{#each stories}}
+
+
+                    <li><p class="newsText" col-xs-6 col-sm-6 col-md-6 col-lg-6>News story: id: {{id}} - {{headline}} - mood: <img src={{img_url}}></p> </li>
+
+                {{/each}}
+
+
+            </ul>
+
+
+           </div>
+
+
+
+    </div>
+
+</div>

@@ -1,0 +1,26 @@
+<script>
+    function process()
+    {
+        var url="http://localhost:8765/" + document.getElementById("ticker").value;
+        location.href=url;
+        return false;
+    }
+</script>
+
+
+<form onSubmit="return process()">
+
+    <fieldset>
+
+        <legend>Company info:</legend>
+
+        Ticker code:<br>
+        <input type="text" name="ticker" id="ticker"><br>
+
+
+        <input type="submit" value="Submit" id="button">
+
+    </fieldset>
+
+</form>
+
